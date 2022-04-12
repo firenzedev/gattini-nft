@@ -1,0 +1,19 @@
+{
+  "name": "gattini",
+  "version": "1.0.0",
+  "description": "Smart contract for Gattini NFT",
+  "scripts": {
+    "test": "hardhat test"
+  },
+  "contributors": [
+    "Tiziano Pessa <tiziano@firenze.dev>",
+    "Lorenzo Spinelli <lorenzo@firenze.dev>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  }
+}
