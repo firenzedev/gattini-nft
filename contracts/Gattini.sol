@@ -10,7 +10,7 @@ contract Gattini is ERC721, Ownable {
 
     uint public tokenPrice = 0.01 ether;
     string private baseURI;
-    uint private tokenCounter = 0;
+    uint public tokenCounter = 0;
     
     constructor(string memory _baseTokenURI) ERC721("Gattini", "MIAO") {
         baseURI = _baseTokenURI;
