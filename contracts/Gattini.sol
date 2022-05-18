@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Gattini is ERC721, Ownable {
 
-    uint public constant MAX_SUPPLY = 100;
+    uint public constant MAX_SUPPLY = 200;
 
     uint public tokenPrice = 0.01 ether;
     string private baseURI;
