@@ -59,8 +59,8 @@ describe("Gattini", () => {
         await expect(contract.connect(user).withdraw()).to.be.reverted;
 
         const txn = await contract.connect(owner).withdraw();
-        const response = await txn.wait();
-        const transferred = contractBalance.sub(response.gasUsed * response.effectiveGasPrice);
+        const receipt = await txn.wait();
+        const transferred = contractBalance.sub(receipt.gasUsed * receipt.effectiveGasPrice);
         expect(await owner.getBalance()).to.equal(ownerInitialBalance.add(transferred));
     });
 });
